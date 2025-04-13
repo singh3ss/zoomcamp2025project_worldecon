@@ -6,15 +6,15 @@ The above dataset is among the suggested data sources for Zoomcamp 2025 capstone
 
 The metrics have been split into 5 areas:
 
-Government Size
+- Government Size
 
-Sound Money
+- Sound Money
 
-Market Regulation
+- Market Regulation
 
-Judiciary and Property
+- Judiciary and Property
 
-Global Trade
+- Global Trade
 
 The metrics have also been captured between 1970 and 2022 with one year increments between 2000 and 2022 and 5 year increments between 1970 and 2000. The data captured between 1970 and 2000 has been split into a single file and then one file per year. 
 
@@ -39,11 +39,11 @@ We have then created storied queries in ig query in GCP to split the master tabl
 
 These include:
 
-econdata_governmentsize
-econdata_Judiciaryandproperty
-econdata_Soundmoney
-econdata_Globaltrade
-econdata_MarketRegulation
+- econdata_governmentsize
+- econdata_Judiciaryandproperty
+- econdata_Soundmoney
+- econdata_Globaltrade
+- econdata_MarketRegulation
 
 
 These individual tables are then used to create various visualisations in Looker. The visualisations in looker capture essential metrics that help us understand the economic outlook of our world and the metrics that help drive the trade.
