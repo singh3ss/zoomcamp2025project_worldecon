@@ -59,7 +59,7 @@ Then create an ADMIN key from your GCP account and download the same as a JSON f
 
 Next please instantiate terraform in command line:
 
-('Terraform INIT')
+(Terraform INIT)
 
 Followed by to start the file plan:	Terraform PLAN
 
