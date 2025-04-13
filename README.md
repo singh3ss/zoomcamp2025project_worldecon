@@ -85,7 +85,6 @@ Terraform APPLY
 
 This should create the Data lake and the data warehouse and the process automatically uses the variable file.
 
-![KESTRA](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG1.png)
 
 
 # KESTRA STEPS
@@ -100,6 +99,9 @@ Then initiate KESTRA docker module by downloading the KESTRA YAML file from thei
 docker-compose up -d
 ```
 
+![KESTRA](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG1.png)
+
+
 In KESTRA then create the two files by copying them from the repository:
 
 ```
@@ -110,12 +112,16 @@ Gcp_econ_data
 Gcp_kv
 ```
 
+![KESTRA](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG2.png)
+
+
 Please execute the KV file followed by the main GCP_Econ_data file. When initiated you’ll be prompted to choose the year. The default has been set to 2022 since when downloaded from the main website all data from 1970-2022 s captured together. For the purposes of this project and best practices we have created the code such that we can download different years separately. 
 
 
 Once this is completed we would have our master table created along with the tables for respective years and respective staging tables as and when executed. 
 
 
+![KESTRA](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG3.png)
 
 
 
@@ -144,6 +150,7 @@ To do this we use the same account used for the above steps and give it access t
 
 Once done we have the option to look at the data we have, one addition that was done by to enable some actions in looker is create calculated fields for certain variables by converting them to a numeric format from character.
 
+![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG4.png)
 
 
 The visualization one wants to create depends on the need, this dataset has 40+ variables and one can use them as they wish. I have created three different dashboards both containing two different charts that help explain the economic outlook of our world and the metrics that influence them. 
