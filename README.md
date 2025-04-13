@@ -1,4 +1,4 @@
-The Data has been extracted from the Fraser Institute website is about the economic freedom metrics captured of various countries across the globe. 
+# The Data has been extracted from the Fraser Institute website is about the economic freedom metrics captured of various countries across the globe. 
 
 [https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0
 ](url)
@@ -55,35 +55,39 @@ These individual tables are then used to create various visualisations in Looker
 The steps to run the data pipeline is as follows:
 
 
-TERRAFORM STEPS
+# TERRAFORM STEPS
 
 Please install Terraform directly from their website and add the install location to your PATH variable. This PATH variable helps command line initiate terraform. 
 
 Then create an ADMIN key from your GCP account and download the same as a JSON file. Store the same int he same directory as you plan to store the Terraform files - main and variables. 
 
 ```
+main.tf
+```
 
-(```main.tf``` )
-
-(```var.tf```)
-
+```
+var.tf
 ```
 
 Next please instantiate terraform in command line:
 
-( ```Terraform INIT``` )
+```
+Terraform INIT
+```
 
 Followed by to start the file plan:	Terraform PLAN
 
 And then apply the terraform file - main.tf using the command:
 
-( ```Terraform APPLY``` )
+```
+Terraform APPLY
+```
 
 This should create the Data lake and the data warehouse and the process automatically uses the variable file.
 
 
 
-KESTRA STEPS
+# KESTRA STEPS
 
 Kestra as mentioned is used to create the main tables and their schema. Kestra can be initiated efficiently and quickly using docker. To do this follows the steps below:
 
@@ -91,13 +95,19 @@ Please start the docker engine.
 
 Then initiate KESTRA docker module by downloading the KESTRA YAML file from their website and then start the file using the commands:
 
-( ```docker-compose up -d``` )
+```
+docker-compose up -d
+```
 
 In KESTRA then create the two files by copying them from the repository:
 
-( ```Gcp_econ_data``` )
+```
+Gcp_econ_data
+```
 
-( ```Gcp_kv``` )
+```
+Gcp_kv
+```
 
 Please execute the KV file followed by the main GCP_Econ_data file. When initiated you’ll be prompted to choose the year. The default has been set to 2022 since when downloaded from the main website all data from 1970-2022 s captured together. For the purposes of this project and best practices we have created the code such that we can download different years separately. 
 
@@ -108,20 +118,22 @@ Once this is completed we would have our master table created along with the tab
 
 
 
-DATA MODELING STEPS in GCP:
+# DATA MODELING STEPS in GCP:
 
 We have created a saved query in GCP which uses the master table to create individual tables split by various areas. Splitting the same into various areas helps decouple different functions. This kind of modeling is more efficient in decoupling and creating a buffer between different teams/areas/functions. Another example of this can be seen how data is stored in various organisations where customer, marketing, sales, product etc data are all kept in individual tables after being derived from a singular data warehouse.
 
 So, to do this please copy the code attached into a query instance in GCP and save it:
 
-( ```Individual_tables.sql``` )
+```
+Individual_tables.sql
+```
 
 
 The same query can also be scheduled and run in accordance with the data being produced in the original sources by Fraser institute followed by the cadence of main data tables being updated. 
 
 
 
-DATA VISUALIZATION STEPS in LOOKER - GCP:
+# DATA VISUALIZATION STEPS in LOOKER - GCP:
 
 
 Since our data lake and data ware house are currently maintained in GCP including the modeling steps, it makes sense for us to find our visualisation tool within GCP for the ease of integration. GCP offers Looker as an option for visualization.
