@@ -154,3 +154,19 @@ Once done we have the option to look at the data we have, one addition that was 
 
 
 The visualization one wants to create depends on the need, this dataset has 40+ variables and one can use them as they wish. I have created three different dashboards both containing two different charts that help explain the economic outlook of our world and the metrics that influence them. 
+
+
+Visualisation 1:
+
+![viz1](https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b)
+
+
+
+
+Visualisation 2:
+
+![viz2]()
+
+
+
+
