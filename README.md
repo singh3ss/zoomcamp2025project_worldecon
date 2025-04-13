@@ -160,7 +160,7 @@ The visualization one wants to create depends on the need, this dataset has 40+ 
 
 Visualisation 1:
 
-[https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b](url)
+[https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b](https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b)
 
 
 Visualisation 2:
