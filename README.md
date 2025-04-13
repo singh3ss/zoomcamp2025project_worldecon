@@ -162,21 +162,21 @@ Visualisation 1:
 
 [https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b](https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b)
 
-![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG6.png)
+![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG5.png)
 
 
 Visualisation 2:
 
 [https://lookerstudio.google.com/reporting/02d220ab-2479-4a45-9c19-11149b45ce96](https://lookerstudio.google.com/reporting/02d220ab-2479-4a45-9c19-11149b45ce96)
 
-![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG7.png)
+![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG6.png)
 
 
 Visualisation 3:
 
 [https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b](https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b)
 
-![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG8.png)
+![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG7.png)
 
 
 
