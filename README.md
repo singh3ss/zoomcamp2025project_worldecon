@@ -1,7 +1,7 @@
 The Data has been extracted from the Fraser Institute website is about the economic freedom metrics captured of various countries across the globe. 
 
-https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0
-
+[https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0
+](url)
 The above dataset is among the suggested data sources for Zoomcamp 2025 capstone project.
 
 The metrics have been split into 5 areas:
@@ -61,10 +61,13 @@ Please install Terraform directly from their website and add the install locatio
 
 Then create an ADMIN key from your GCP account and download the same as a JSON file. Store the same int he same directory as you plan to store the Terraform files - main and variables. 
 
+```
 
 (```main.tf``` )
 
 (```var.tf```)
+
+```
 
 Next please instantiate terraform in command line:
 
