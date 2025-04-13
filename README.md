@@ -2,6 +2,8 @@
 
 [https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0
 ](url)
+
+
 The above dataset is among the suggested data sources for Zoomcamp 2025 capstone project.
 
 The metrics have been split into 5 areas:
