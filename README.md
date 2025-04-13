@@ -57,15 +57,20 @@ Please install Terraform directly from their website and add the install locatio
 
 Then create an ADMIN key from your GCP account and download the same as a JSON file. Store the same int he same directory as you plan to store the Terraform files - main and variables. 
 
+
+(```main.tf``` )
+
+(```var.tf```)
+
 Next please instantiate terraform in command line:
 
-( Terraform INIT )
+( ```Terraform INIT``` )
 
 Followed by to start the file plan:	Terraform PLAN
 
 And then apply the terraform file - main.tf using the command:
 
-Terraform APPLY
+( ```Terraform APPLY``` )
 
 This should create the Data lake and the data warehouse and the process automatically uses the variable file.
 
@@ -79,13 +84,13 @@ Please start the docker engine.
 
 Then initiate KESTRA docker module by downloading the KESTRA YAML file from their website and then start the file using the commands:
 
-docker-compose up -d
+( ```docker-compose up -d``` )
 
 In KESTRA then create the two files by copying them from the repository:
 
-Gcp_econ_data
+( ```Gcp_econ_data``` )
 
-Gcp_kv
+( ```Gcp_kv``` )
 
 Please execute the KV file followed by the main GCP_Econ_data file. When initiated you’ll be prompted to choose the year. The default has been set to 2022 since when downloaded from the main website all data from 1970-2022 s captured together. For the purposes of this project and best practices we have created the code such that we can download different years separately. 
 
@@ -102,7 +107,7 @@ We have created a saved query in GCP which uses the master table to create indiv
 
 So, to do this please copy the code attached into a query instance in GCP and save it:
 
-Individual_tables.sql
+( ```Individual_tables.sql``` )
 
 
 The same query can also be scheduled and run in accordance with the data being produced in the original sources by Fraser institute followed by the cadence of main data tables being updated. 
