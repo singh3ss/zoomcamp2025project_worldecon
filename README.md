@@ -85,6 +85,7 @@ Terraform APPLY
 
 This should create the Data lake and the data warehouse and the process automatically uses the variable file.
 
+![KESTRA](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG1.png)
 
 
 # KESTRA STEPS
