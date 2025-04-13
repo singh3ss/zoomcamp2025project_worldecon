@@ -7,9 +7,13 @@ The above dataset is among the suggested data sources for Zoomcamp 2025 capstone
 The metrics have been split into 5 areas:
 
 Government Size
+
 Sound Money
+
 Market Regulation
+
 Judiciary and Property
+
 Global Trade
 
 The metrics have also been captured between 1970 and 2022 with one year increments between 2000 and 2022 and 5 year increments between 1970 and 2000. The data captured between 1970 and 2000 has been split into a single file and then one file per year. 
