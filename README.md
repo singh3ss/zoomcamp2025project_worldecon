@@ -180,3 +180,16 @@ Visualisation 3:
 
 
 
+
+
+
+![HIGHLEVEL DAG](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG8.png)
+
+
+
+
+
+
+
+
+
