@@ -10,7 +10,7 @@ inputs:
     displayName: Select year
     values: ["2018","2019", "2020","2021","2022"]
     defaults: "2022"
-    allowCustomValue: true # allows you to type 2021 from the UI for the homework 🤗
+    allowCustomValue: true 
 
 #creating different variables which are then used to create data/tables in GCP
 variables:
