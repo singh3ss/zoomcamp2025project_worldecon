@@ -174,7 +174,7 @@ Visualisation 2:
 
 Visualisation 3:
 
-[https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b](https://lookerstudio.google.com/reporting/21671f1a-cbc9-4c21-9d9f-dc69cd17a44b)
+[https://lookerstudio.google.com/reporting/09ebab8c-5d58-4d35-9f0d-5fc334a9d2b8](https://lookerstudio.google.com/reporting/09ebab8c-5d58-4d35-9f0d-5fc334a9d2b8)
 
 ![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG7.png)
 
