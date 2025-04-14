@@ -107,11 +107,11 @@ docker-compose up -d
 In KESTRA then create the two files by copying them from the repository:
 
 ```
-Gcp_econ_data
+Gcp_econ_data.yml
 ```
 
 ```
-Gcp_kv
+Gcp_kv.yml
 ```
 
 ![KESTRA](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG2.png)
