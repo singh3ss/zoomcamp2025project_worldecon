@@ -1,4 +1,4 @@
-### The Data has been extracted from the FRASER INSTITUTE website is about the economic freedom metrics captured of various countries across the globe. 
+### The Data has been extracted from the FRASER INSTITUTE website. Data captures the economic freedom metrics of various countries across the globe between years 1970 and 2022. 
 
 [https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0
 ](https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0)
@@ -37,7 +37,13 @@ The different files are uploaded into the tables with respective years using KES
 
 KESTRA instance was initiated using docker and the docker YAML file has been added to this repository. It also includes a key value file which helps include the project ID, location, data lake (GCP bucket) name, data warehouse (BQ Dataset) name etc. The JSON file which helps us create and edit these tables etc have been added directly in the KV option in KESTRA. The JSON file is an admin key extracted from the IAM of the GCP account. 
 
-We have then created storied queries in ig query in GCP to split the master table to create individual tables. Due to the size of the table it was more efficient to do this  in GCP itself but if the volume increases the same queries can be easily transformed to be created and executed in DBT.
+We have then created stored queries in GCP to split the master table to create individual tables. Due to the size of the table it was more efficient to do this  in GCP itself but if the volume increases the same queries can be easily transformed to be created and executed in DBT.
+
+
+
+![HIGHLEVEL DAG](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG8.png)
+
+
 
 These include:
 
@@ -181,9 +187,6 @@ Visualisation 3:
 
 
 
-
-
-![HIGHLEVEL DAG](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG8.png)
 
 
 
