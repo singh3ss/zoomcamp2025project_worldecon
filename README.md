@@ -1,4 +1,4 @@
-### The Data has been extracted from the FRASER INSTITUTE website. Data captures the economic freedom metrics of various countries across the globe between years 1970 and 2022. 
+### Data has been extracted from the FRASER INSTITUTE website, capturing the economic freedom metrics of various countries across the globe between years 1970 and 2022. 
 
 [https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0
 ](https://efotw.org/economic-freedom/dataset?geozone=world&page=dataset&min-year=2&max-year=0&filter=0)
@@ -29,9 +29,9 @@ The data pipeline has been created such that terraform is first used to create t
 All the codes and their steps are well documented with comments within the codes for ease of walkthrough, understanding and reproducibility. 
 
 
-This has been done using the two files: main.tf and var.tf. Var.tf contains different variables necessary to create the data lake which in this case is a GCP bucket and the data warehouse which is a big query dataset. The dataset is then used to create various tables.The tables are created such that we have one master table, various tables for different years, staging table and then we have tables split according to the different areas mentioned above.
+This has been done using the two files: main.tf and var.tf. Var.tf contains different variables necessary to create the data lake which in this case is a GCP bucket and the data warehouse which is a big query dataset. The dataset is then used to create various tables. The tables are created such that we have one master table, various tables for different years, staging table and then we have tables split according to the different areas mentioned above.
 
-The different files are uploaded into the tables with respective years using KESTRA. Since the dates are before the current year and time we have done this using the backfilling option in KESTRA. KESTRA module is used to create the main table, staging table, table with respective years and all their schemas as well.
+The different files are uploaded into the tables with respective years using KESTRA. Since the dates are before the current year and time we have done this using the backfilling option in KESTRA. KESTRA module is used to create the main table, staging table, table with respective years and all their schemas as well. Data downloaded from FRASER Inst combines all years into a single file, this can be split into different years to simulate files for different years. The code has been ceated sch that it can contiue to capture data for the years forward.
 
 
 
@@ -83,7 +83,11 @@ Next please instantiate terraform in command line:
 Terraform INIT
 ```
 
-Followed by to start the file plan:	Terraform PLAN
+Followed by: start the file plan:	
+
+```
+Terraform PLAN
+```
 
 And then apply the terraform file - main.tf using the command:
 
@@ -93,6 +97,7 @@ Terraform APPLY
 
 This should create the Data lake and the data warehouse and the process automatically uses the variable file.
 
+There is an option to destroy the bucket and the dataset if needed and can be a useful control.
 
 
 # KESTRA STEPS
@@ -156,12 +161,14 @@ Since our data lake and data ware house are currently maintained in GCP includin
 To do this we use the same account used for the above steps and give it access to the above data sources individually as needed by the visualization itself, this is done by enabling the API that connects them together. 
 
 
-Once done we have the option to look at the data we have, one addition that was done by to enable some actions in looker is create calculated fields for certain variables by converting them to a numeric format from character.
+Once done we have the option to look at the data we have, one addition done was to enable some actions in looker by creating calculated fields for certain variables by converting them to a numeric format from character.
 
 ![LOOKER](https://github.com/singh3ss/zoomcamp2025project_worldecon/blob/main/IMAGES/IMG4.png)
 
 
-The visualization one wants to create depends on the need, this dataset has 40+ variables and one can use them as they wish. I have created three different dashboards both containing two different charts that help explain the economic outlook of our world and the metrics that influence them. 
+The visualization one wants to create varies from markers and trends deemed essential to a project, this dataset has 40+ variables and one can use them as they wish. 
+
+I have created three different dashboards both containing two different charts and some markers that help explain the economic outlook of our world and the metrics that influence them. 
 
 
 Visualisation 1:
